@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Degradê no Texto</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+
+        background-color: #e6f7ff; /* Cor de fundo clara */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .gradient-text {
+        font-size: 3em;
+        font-weight: bold;
+        background: linear-gradient(
+          90deg,
+          #6a5acd,
+          #00bfff,
+          #ff69b4
+        ); /* Novas cores: roxo, azul e rosa */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .container {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .container p {
+        font-size: 1.2em;
+        margin-top: 20px;
+        color: #333; /* Cor do texto padrão */
+      }
+
+      footer {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.9em;
+        color: #666; /* Cor do texto do rodapé */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="gradient-text">Aprenda a Fazer Texto em Degradê com CSS!</h1>
+      <p>
+        Aprenda a fazer esse efeito com CSS usando <code>linear-gradient</code>!
+      </p>
+    </div>
+    <footer>&copy; 2024 Desenvolva como Dev</footer>
+  </body>
+</html>
